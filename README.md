@@ -5,38 +5,38 @@ A machine learning project to detect fraudulent insurance claims using Mendeley 
 
 insurance-fraud-detection/  
 ├── data/
-    ├── insurance_claims.csv
-├── notebook/
-    ├── visualisation.ipynb                    
-├── src/  
-│   ├── preprocessing.py      
-│   ├── models.py             
-├── main.py                    
-├── requirements.txt          
-├── README.md                
-└── .gitignore                # 
+    ├── insurance_claims.csv  
+├── notebook/  
+    ├── visualisation.ipynb                      
+├── src/    
+│   ├── preprocessing.py        
+│   ├── models.py               
+├── main.py                      
+├── requirements.txt            
+├── README.md                  
+└── .gitignore                  # 
 
 ## Setup
 1. **Clone the repository**
-git clone https://github.com/jashraf215/insurance-fraud-detection.git
+    git clone https://github.com/jashraf215/insurance-fraud-detection.git
 
-cd insurance-fraud-detection 
+    cd insurance-fraud-detection 
 
 2. **Install dependencies**
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 3. **Add the data**
 
-Place `insurance_claims.csv` in the `data/` folder.  
+    Place `insurance_claims.csv` in the `data/` folder.  
 
-Data is found at: https://data.mendeley.com/datasets/992mh7dk9y/2 
+    Data is found at: https://data.mendeley.com/datasets/992mh7dk9y/2 
 
-4. ## Running the pipeline
+4. **Running the pipeline**
 
-python main.py
+    python main.py
 
-This will:
+    This will:
 
 - Load and clean the data  
 - Train a logistic regression model  
@@ -64,10 +64,9 @@ This will:
 **Classification report**:
 
               | precision | recall | f1-score | support |
-|-------------------------------------------------------|
-        |  0 |  0.90  |   0.76 |    0.83 |      753 |
-        |  1 |  0.51  |   0.73 |    0.60 |     247  |
-
-    | accuracy |        |       |    0.76  |    1000|
-   |macro avg  |     0.70 |     0.75  |    0.71  |    1000|
-|weighted avg   |    0.80  |    0.76   |   0.77   |   1000|
+        |-----------------------------------------------|
+        |  0 |  0.90  |   0.76 |    0.83 |     753 |
+        |  1 |  0.51  |   0.73 |    0.60 |     247 |
+  | accuracy |        |        |    0.76 |    1000 |
+  |macro avg |   0.70 |  0.75  |    0.71 |    1000 |
+|weighted avg|  0.80  |   0.76 |   0.77  |   1000 |
